@@ -12,6 +12,6 @@ This could be used for real device and simulator both
 
 Custom Framework
 
-Fondataion
+Fndataion
 
 Access Level Control
