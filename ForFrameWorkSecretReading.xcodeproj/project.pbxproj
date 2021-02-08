@@ -13,7 +13,23 @@
 		F2D1CD3325D1F5FB00CBC5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D1CD3125D1F5FB00CBC5E6 /* Main.storyboard */; };
 		F2D1CD3525D1F5FB00CBC5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D1CD3425D1F5FB00CBC5E6 /* Assets.xcassets */; };
 		F2D1CD3825D1F5FB00CBC5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D1CD3625D1F5FB00CBC5E6 /* LaunchScreen.storyboard */; };
+		F2D1CD7125D1FA4B00CBC5E6 /* SecretsFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D1CD6F25D1FA3E00CBC5E6 /* SecretsFrameWork.framework */; };
+		F2D1CD7225D1FA4B00CBC5E6 /* SecretsFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F2D1CD6F25D1FA3E00CBC5E6 /* SecretsFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F2D1CD5F25D1F74A00CBC5E6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F2D1CD7225D1FA4B00CBC5E6 /* SecretsFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F2D1CD2825D1F5FB00CBC5E6 /* ForFrameWorkSecretReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForFrameWorkSecretReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		F2D1CD3425D1F5FB00CBC5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2D1CD3725D1F5FB00CBC5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2D1CD3925D1F5FB00CBC5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D1CD6F25D1FA3E00CBC5E6 /* SecretsFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SecretsFrameWork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D1CD7125D1FA4B00CBC5E6 /* SecretsFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +74,7 @@
 		F2D1CD2A25D1F5FB00CBC5E6 /* ForFrameWorkSecretReading */ = {
 			isa = PBXGroup;
 			children = (
+				F2D1CD5925D1F72700CBC5E6 /* FrameWork */,
 				F2D1CD2B25D1F5FB00CBC5E6 /* AppDelegate.swift */,
 				F2D1CD2D25D1F5FB00CBC5E6 /* SceneDelegate.swift */,
 				F2D1CD2F25D1F5FB00CBC5E6 /* ViewController.swift */,
@@ -65,6 +84,14 @@
 				F2D1CD3925D1F5FB00CBC5E6 /* Info.plist */,
 			);
 			path = ForFrameWorkSecretReading;
+			sourceTree = "<group>";
+		};
+		F2D1CD5925D1F72700CBC5E6 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				F2D1CD6F25D1FA3E00CBC5E6 /* SecretsFrameWork.framework */,
+			);
+			path = FrameWork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +104,7 @@
 				F2D1CD2425D1F5FB00CBC5E6 /* Sources */,
 				F2D1CD2525D1F5FB00CBC5E6 /* Frameworks */,
 				F2D1CD2625D1F5FB00CBC5E6 /* Resources */,
+				F2D1CD5F25D1F74A00CBC5E6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +316,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ForFrameWorkSecretReading/FrameWork",
+				);
 				INFOPLIST_FILE = ForFrameWorkSecretReading/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +339,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GVZPRCFHJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ForFrameWorkSecretReading/FrameWork",
+				);
 				INFOPLIST_FILE = ForFrameWorkSecretReading/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
